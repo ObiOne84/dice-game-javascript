@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     for (let button of buttons) {
         button.addEventListener("click", function () {
             if (this.getAttribute("id") === "roll-dice") {
-                alert("You clicked roll dice");
+                rollTheDice();
             } else if (this.getAttribute("id") === "restart") {
                 alert("You clicked restart");
             } else if (this.getAttribute("id") === "exit") {
@@ -21,3 +21,44 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+
+function rollTheDice() {
+
+    let num1 = Math.floor(Math.random() * 6) + 1;
+    let num2 = Math.floor(Math.random() * 6) + 1;
+    let num3 = Math.floor(Math.random() * 6) + 1;
+    let num4 = Math.floor(Math.random() * 6) + 1;
+    let sumPlayer = [];
+    let sumCpu = [];
+
+    if (num1 === num2 && num3 !== num4) {
+        sumPlayer = (num1 + num2) * 2;
+        sumCpu = num3 + num4;
+    } else if (num1 !== num2 && num3 === num4) {
+        sumPlayer = num1 + num2;
+        sumCpu = (num3 + num4) * 2;
+    } else if (num1 === num2 && num3 === num4) {
+        sumPlayer = (num1 + num2) * 2;
+        sumCpu = (num3 + num4) * 2;
+    } else {
+        sumPlayer = num1 + num2;
+        sumCpu = num3 + num4;
+    }
+
+    replaceImage(num1, num2, num3, num4);
+}
+
+function replaceImage(num1, num2, num3, num4) {
+    let image1 = new Image();
+    let image2 = new Image();
+    let image3 = new Image();
+    let image4 = new Image();
+    image1.src = "./assets/images/dice-" + num1 + ".png";
+    image2.src = "./assets/images/dice-" + num2 + ".png";
+    image3.src = "./assets/images/dice-" + num3 + ".png";
+    image4.src = "./assets/images/dice-" + num4 + ".png";
+    document.getElementsByTagName("img")[1].replaceWith(image1);
+    document.getElementsByTagName("img")[2].replaceWith(image2);
+    document.getElementsByTagName("img")[3].replaceWith(image3);
+    document.getElementsByTagName("img")[4].replaceWith(image4);
+}
