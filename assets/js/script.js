@@ -10,7 +10,10 @@ document.addEventListener("DOMContentLoaded", function () {
             } else if (this.getAttribute("id") === "restart") {
                 resetTheScore();
             } else if (this.getAttribute("id") === "exit") {
-                alert("You clicked exit");
+                // window.location.assign("../first.html"); // https://www.w3schools.com/jsref/met_loc_assign.asp
+                localStorage.clear();
+                window.location.replace("../index.html");
+                //https://www.w3schools.com/jsref/met_loc_replace.asp
             } else if (this.getAttribute("id") === "button-one") {
                 returnToTheGame();
                 resetTheScore();
