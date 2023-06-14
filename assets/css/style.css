@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel&family=Montserrat:wght@500&family=Proza+Libre&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    color: #003f3f;
+}
+
+h1 {
+    font-family: Montserrat, sans-serif;
+}
+
+h2 {
+    font-family: Martel, sans-serif;
+}
+
+p {
+    font-family: "Proza Libre", sans-serif;
+}
