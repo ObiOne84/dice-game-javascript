@@ -51,3 +51,63 @@ p {
     height: 400px;
 
 }
+
+/* Style about game section */
+#info-holder {
+    display: flex;
+    flex-direction: row;
+    background-color: #008b8b;
+    height: 100%;
+    justify-content: space-evenly;
+}
+
+.user-data {
+    width: 40%;
+    height: 90%;
+    background-color: #003f3f;
+    margin: auto 7.5%;
+    border-radius: 15px;
+    color: white;
+}
+
+#about-game h2,
+#label {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 2.5%;
+    padding: 0;
+}
+
+.content {
+    margin-left: 10px;
+    padding: 1px;
+    letter-spacing: 1px;
+
+}
+
+.login {
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    margin-top: 7.5%;
+    font-size: 150%;
+    border-radius: 15px;
+}
+
+#pname {
+    width: 60%;
+    text-align: center;
+    border: 2px solid black;
+    font-size: 120%;
+}
+
+#pname:hover {
+    border: 2px dashed #8b0000;
+    background-color: #edffff;
+}
+
+#enjoy {
+    margin-top: 3px;
+    text-align: center;
+}
