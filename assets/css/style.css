@@ -307,4 +307,63 @@ footer {
         letter-spacing: normal;
     }
 
+    /* style game */
+    #game-area {
+        height: 500px;
+    }
+
+    #left,
+    #right {
+        font-size: 1.5rem;
+    }
+
+    #game-box {
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        margin: 0;
+    }
+
+    #player-zone,
+    #cpu-zone {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .holder img {
+        height: 200px;
+    }
+
+    .buttons,
+    #roll-dice {
+        font-size: 90%;
+        height: 40px;
+        width: 90px;
+        text-align: center;
+        font-weight: bold;
+        border: 1px solid black;
+    }
+
+    #results-message {
+        margin: 0;
+        padding: 15px;
+    }
+
+    #control-box {
+        height: 100px;
+    }
+
+    #message-box {
+        width: 30%;
+        font-size: 150%;
+        padding: 15px;
+    }
+
+    .message-to-player {
+        font-size: 200%;
+    }
+
 }
