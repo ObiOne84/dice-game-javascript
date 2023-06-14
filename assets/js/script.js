@@ -46,6 +46,8 @@ function rollTheDice() {
     }
 
     replaceImage(num1, num2, num3, num4);
+    displayTheRollResult(sumPlayer, sumCpu);
+    displayTheWinner(sumPlayer, sumCpu);
 }
 
 function replaceImage(num1, num2, num3, num4) {
@@ -61,4 +63,27 @@ function replaceImage(num1, num2, num3, num4) {
     document.getElementsByTagName("img")[2].replaceWith(image2);
     document.getElementsByTagName("img")[3].replaceWith(image3);
     document.getElementsByTagName("img")[4].replaceWith(image4);
+}
+
+/** Display the dice roll result */
+function displayTheRollResult(sumPlayer, sumCpu) {
+    let pName = localStorage.getItem('pname');
+    document.getElementById("player-field").innerText = `${pName} scored ${sumPlayer} points!`;
+    document.getElementById("cpu-field").innerText = `CPU scored ${sumCpu} points!`;
+}
+
+/** Display to winner of the roll dice
+ * the function display the name of the winner
+ */
+function displayTheWinner(sumPlayer, sumCpu) {
+    if (sumPlayer === sumCpu) {
+        return document.getElementById("message").innerHTML = "DRAW!";
+    } else if (sumPlayer > sumCpu) {
+        let pName = localStorage.getItem('pname');
+        document.getElementById("message").innerHTML = `${pName} WINS!`;
+        return incrementPlayerScore();
+    } else {
+        document.getElementById("message").innerHTML = "CPU WINS!";
+        return incrementCpuScore();
+    }
 }
