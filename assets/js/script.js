@@ -87,3 +87,25 @@ function displayTheWinner(sumPlayer, sumCpu) {
         return incrementCpuScore();
     }
 }
+
+/**
+ * Gets the current player score from DOM and increments it by 1
+ * and when player score reach 11 point it will display message
+ */
+function incrementPlayerScore() {
+    let playerScore = parseInt(document.getElementById("palyer-score").innerText);
+    document.getElementById("palyer-score").innerText = ++playerScore;
+}
+
+/**
+ * Gets the current CPU score from DOM and increments it by 1
+ * and when CPU score reach 11 point it will display message
+ */
+function incrementCpuScore() {
+    let cpuScore = parseInt(document.getElementById("cpu-score").innerText);
+    document.getElementById("cpu-score").innerText = ++cpuScore;
+}
+
+// function displayWinnerMessage();
+
+// function displayLooserMessage();
