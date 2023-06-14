@@ -21,3 +21,15 @@ h2 {
 p {
     font-family: "Proza Libre", sans-serif;
 }
+
+/* Style logo */
+#logo {
+    /* height: 7%; */
+    text-align: center;
+    font-size: 170%;
+    margin: 1.5% auto;
+}
+
+#logo img {
+    height: 64px;
+}
