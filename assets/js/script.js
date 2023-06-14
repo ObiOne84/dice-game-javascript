@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (this.getAttribute("id") === "roll-dice") {
                 rollTheDice();
             } else if (this.getAttribute("id") === "restart") {
-                alert("You clicked restart");
+                resetTheScore();
             } else if (this.getAttribute("id") === "exit") {
                 alert("You clicked exit");
             } else if (this.getAttribute("id") === "button-one") {
@@ -126,4 +126,17 @@ function displayWinnerMessage() {
 function displayLooserMessage() {
     let looserMessage = document.getElementById("looser");
     looserMessage.style.display = "block";
+}
+
+/**
+ * This function will reset the score, and clear all messages
+ */
+function resetTheScore() {
+    let cpuScore = document.getElementById("cpu-score");
+    let playerScore = document.getElementById("palyer-score");
+    cpuScore.innerHTML = "0";
+    playerScore.innerHTML = "0";
+    document.getElementById("player-field").innerText = "";
+    document.getElementById("cpu-field").innerText = "";
+    document.getElementById("message").innerHTML = "";
 }
