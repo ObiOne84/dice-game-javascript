@@ -25,6 +25,8 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     }
+    let pName = localStorage.getItem('pname');
+    document.getElementById("left").innerHTML = pName;
 });
 
 function rollTheDice() {
