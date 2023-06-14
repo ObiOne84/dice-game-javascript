@@ -33,3 +33,21 @@ p {
 #logo img {
     height: 64px;
 }
+
+/* Style hero image */
+#hero-image {
+    height: 400px;
+    width: 100%;
+    text-align: center;
+    border-top: 2px solid #003f3f;
+}
+
+#video-dice {
+    height: 100%;
+    width: 100%;
+}
+
+#game-info {
+    height: 400px;
+
+}
