@@ -21,20 +21,23 @@
         </div>
     </header>
     <!-- Game area -->
-    <section id="game-area">
+    <!-- Here I had section before, but I replaced it with the div, check if you can add headings instead of span -->
+    <div id="game-area">
         <span id="left">Player</span>
         <span id="right">CPU</span>
         <div id="game-box">
             <div id="player-zone">
-                <div class="holder" id="dice-one"><img id="image-one" src="assets/images/dice-4.png"></div>
-                <div class="holder" id="dice-two"><img src="assets/images/dice-6.png"></div>
+                <div class="holder" id="dice-one"><img id="image-one" src="assets/images/dice-4.png"
+                        alt="Player dice one.">
+                </div>
+                <div class="holder" id="dice-two"><img src="assets/images/dice-6.png" alt="Player dice two."></div>
             </div>
             <div id="cpu-zone">
-                <div class="holder" id="dice-three"><img src="assets/images/dice-5.png"></div>
-                <div class="holder" id="dice-four"><img src="assets/images/dice-3.png"></div>
+                <div class="holder" id="dice-three"><img src="assets/images/dice-5.png" alt="CPU dice one."></div>
+                <div class="holder" id="dice-four"><img src="assets/images/dice-3.png" alt="Cput dice two."></div>
             </div>
         </div>
-    </section>
+    </div>
 
     <!-- Control area -->
     <section id="control-area">
@@ -49,10 +52,10 @@
     <section id="results-area">
         <div id="results-message">
             <div class="dice-roll-result">
-                <h2 id="player-field"></h2>
+                <h2 id="player-field">-</h2>
             </div>
             <div class="dice-roll-result">
-                <h2 id="cpu-field"></h2>
+                <h2 id="cpu-field">-</h2>
             </div>
         </div>
         <div id="score-holder">
@@ -60,7 +63,7 @@
                 <h2><span id="palyer-score">0</span><br><span id="player-name">Player</span><br>Win</h2>
             </div>
             <div id="message-box">
-                <h3 id="message"></h3>
+                <h3 id="message">-</h3>
             </div>
             <div class="score-boxes" id="cpu-area">
                 <h2><span id="cpu-score">0</span><br>CPU<br>Win</h2>
