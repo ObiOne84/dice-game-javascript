@@ -524,6 +524,17 @@ footer {
     #score-holder {
         font-size: 80%;
     }
+
+    /* Add stlye to winner/looser message */
+    .reward {
+        width: 120px;
+    }
+
+    .message-to-player {
+        margin-top: 28vh;
+        font-size: 110%;
+        padding: 0 15px;
+    }
 }
 
 /* for screen size 330px and below */
