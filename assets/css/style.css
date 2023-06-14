@@ -284,7 +284,36 @@ footer {
     color: darkred;
 }
 
-/* Add style to winner/looser message */
+/* Add style to winner and looser message */
+.end-game-message {
+    background-color: #008b8b;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #fed953;
+    text-transform: uppercase;
+}
+
+#winner {
+    display: none;
+}
+
+#looser {
+    display: none;
+}
+
+.message-to-player {
+    margin-top: 15vh;
+    font-size: 300%;
+}
+
+.play-again {
+    margin-top: 15px;
+}
 
 /* media query */
 
