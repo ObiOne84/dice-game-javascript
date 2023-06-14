@@ -455,3 +455,16 @@ footer {
         font-size: 120%;
     }
 }
+
+/* for screen size 425px and below */
+@media screen and (max-width: 425px) {
+
+    /* Add stlye to main page */
+    #logo {
+        font-size: 120%;
+    }
+
+    #logo img {
+        height: 40px;
+    }
+}
