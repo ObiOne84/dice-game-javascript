@@ -424,3 +424,34 @@ footer {
         font-size: 80%;
     }
 }
+
+/* for screen size 500px and below */
+@media screen and (max-width: 500px) {
+
+    /* Add style to main page */
+    #hero-image {
+        height: 30vh;
+    }
+
+    #info-holder {
+        font-size: 90%;
+    }
+
+    #about-game h2,
+    #label {
+        font-size: 120%;
+    }
+
+    #label {
+        margin-top: 12.5%;
+    }
+
+    #pname {
+        width: 80%;
+        font-size: 100%;
+    }
+
+    .social-media i {
+        font-size: 120%;
+    }
+}
