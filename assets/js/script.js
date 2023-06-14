@@ -12,9 +12,11 @@ document.addEventListener("DOMContentLoaded", function () {
             } else if (this.getAttribute("id") === "exit") {
                 alert("You clicked exit");
             } else if (this.getAttribute("id") === "button-one") {
-                alert("You clicked play again");
+                returnToTheGame();
+                resetTheScore();
             } else if (this.getAttribute("id") === "button-two") {
-                alert("You clicked play again");
+                returnToTheGame();
+                resetTheScore();
             } else if (this.getAttribute("id") === "play") {
                 checkPlayerName();
             }
@@ -153,4 +155,14 @@ function checkPlayerName() {
     } else {
         alert("Choose Your Name!");
     }
+}
+
+/** 
+ * Function will unhide the message for the winner and allow to return to the game
+ */
+function returnToTheGame() {
+    let winnerMessage = document.getElementById("winner");
+    winnerMessage.style.display = "none";
+    let looserMessage = document.getElementById("looser");
+    looserMessage.style.display = "none";
 }
