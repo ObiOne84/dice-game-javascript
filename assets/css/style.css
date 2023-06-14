@@ -399,4 +399,28 @@ footer {
     #label {
         margin: 0;
     }
+
+    /* style game area */
+    #game-area {
+        height: 400px;
+    }
+
+    .holder img {
+        height: 175px;
+    }
+
+    #results-message {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 15%;
+        padding: 30px;
+    }
+
+    .score-boxes {
+        width: 35%;
+        text-align: center;
+        font-size: 80%;
+    }
 }
