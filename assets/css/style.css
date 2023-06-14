@@ -283,3 +283,28 @@ footer {
     font-size: 150%;
     color: darkred;
 }
+
+/* Add style to winner/looser message */
+
+/* media query */
+
+/* for screen size 1024px and below */
+@media screen and (max-width: 1024px) {
+
+    /* style main page */
+    #game-info {
+        height: 350px;
+    }
+
+    .user-data {
+        width: 45%;
+        height: 90%;
+        margin: auto 2.5%;
+    }
+
+    .content {
+        padding: 0;
+        letter-spacing: normal;
+    }
+
+}
