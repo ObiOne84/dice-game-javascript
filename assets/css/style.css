@@ -452,6 +452,16 @@ footer {
         text-align: center;
         font-size: 80%;
     }
+
+    /* Add style to winner/looser message */
+    .reward {
+        width: 160px;
+    }
+
+    .message-to-player {
+        margin-top: 25vh;
+        font-size: 140%;
+    }
 }
 
 /* for screen size 500px and below */
