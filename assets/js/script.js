@@ -27,6 +27,11 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     let pName = localStorage.getItem('pname');
     document.getElementById("left").innerHTML = pName;
+    document.getElementById("roll-dice").addEventListener("keydown", function (event) {
+        if (event.key === "Enter") {
+            rollTheDice();
+        }
+    });
 });
 
 function rollTheDice() {
