@@ -367,3 +367,36 @@ footer {
     }
 
 }
+
+/* for screen size 750px and below */
+@media screen and (max-width: 750px) {
+
+    /* style main page */
+    #logo {
+        font-size: 150%;
+    }
+
+    #logo img {
+        height: 52px;
+    }
+
+    #game-info {
+        height: 600px;
+    }
+
+    #info-holder {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .user-data {
+        width: 90%;
+        height: 45%;
+        margin: auto 5%;
+    }
+
+    #about-game h2,
+    #label {
+        margin: 0;
+    }
+}
