@@ -111,3 +111,29 @@ p {
     margin-top: 3px;
     text-align: center;
 }
+
+/* style footer - following example of "Love Running" tutorial */
+footer {
+    height: 100px;
+    line-height: 100px;
+}
+
+.social-media {
+    text-align: center;
+}
+
+.social-media>li {
+    display: inline;
+
+}
+
+.social-media i {
+    font-size: 150%;
+    margin: 15px;
+    padding: 2px;
+    color: #003f3f;
+}
+
+.social-media i:hover {
+    color: #8b0000;
+}
