@@ -467,4 +467,22 @@ footer {
     #logo img {
         height: 40px;
     }
+
+    /*Add stlye to game area */
+    #left,
+    #right {
+        font-size: 1.25rem;
+    }
+
+    .holder img {
+        height: 140px;
+    }
+
+    #results-message {
+        font-size: 80%;
+    }
+
+    #score-holder {
+        font-size: 80%;
+    }
 }
