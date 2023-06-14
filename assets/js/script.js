@@ -95,6 +95,9 @@ function displayTheWinner(sumPlayer, sumCpu) {
 function incrementPlayerScore() {
     let playerScore = parseInt(document.getElementById("palyer-score").innerText);
     document.getElementById("palyer-score").innerText = ++playerScore;
+    if (playerScore === 11) {
+        displayWinnerMessage();
+    }
 }
 
 /**
@@ -104,8 +107,23 @@ function incrementPlayerScore() {
 function incrementCpuScore() {
     let cpuScore = parseInt(document.getElementById("cpu-score").innerText);
     document.getElementById("cpu-score").innerText = ++cpuScore;
+    if (cpuScore === 11) {
+        displayLooserMessage();
+    }
 }
 
-// function displayWinnerMessage();
+/**
+ * Function display the message for the player who won the game but unhiding the div
+ */
+function displayWinnerMessage() {
+    let winnerMessage = document.getElementById("winner");
+    winnerMessage.style.display = "block";
+}
 
-// function displayLooserMessage();
+/**
+ * Function display the message for the player who lost the game but unhiding the div
+ */
+function displayLooserMessage() {
+    let looserMessage = document.getElementById("looser");
+    looserMessage.style.display = "block";
+}
