@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
             } else if (this.getAttribute("id") === "button-two") {
                 alert("You clicked play again");
             } else if (this.getAttribute("id") === "play") {
-                alert("You clicked play");
+                checkPlayerName();
             }
         });
     }
@@ -139,4 +139,18 @@ function resetTheScore() {
     document.getElementById("player-field").innerText = "";
     document.getElementById("cpu-field").innerText = "";
     document.getElementById("message").innerHTML = "";
+}
+
+/**
+ * Check it the player name field has value
+ * add player name to local storage
+ */
+function checkPlayerName() {
+    let playerName = document.getElementById("pname").value;
+    if (playerName) {
+        localStorage.setItem("pname", playerName);
+        window.location.replace("../game.html");
+    } else {
+        alert("Choose Your Name!");
+    }
 }
