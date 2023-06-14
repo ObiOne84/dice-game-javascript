@@ -469,7 +469,7 @@ footer {
 
     /* Add style to main page */
     #hero-image {
-        height: 30vh;
+        height: 300px;
     }
 
     #info-holder {
@@ -537,8 +537,8 @@ footer {
     }
 }
 
-/* for screen size 330px and below */
-@media screen and (max-width: 330px) {
+/* for screen size 340px and below */
+@media screen and (max-width: 340px) {
     #game-info {
         height: 700px;
     }
