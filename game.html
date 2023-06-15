@@ -20,34 +20,34 @@
             <h1><img src="assets/images/roll-dice-icon.png" alt="logo"> ROLL DICES GAME!</h1>
         </div>
     </header>
-    <!-- Game area -->
-    <!-- Here I had section before, but I replaced it with the div, check if you can add headings instead of span -->
-    <div id="game-area">
-        <span id="left">Player</span>
-        <span id="right">CPU</span>
-        <div id="game-box">
-            <div id="player-zone">
-                <div class="holder" id="dice-one"><img id="image-one" src="assets/images/dice-4.png"
-                        alt="Player dice one.">
+    <!-- Game zone -->
+    <section id="game-zone">
+        <div id="game-area">
+            <h2 id="left">Player</h2>
+            <h2 id="right">CPU</h2>
+            <div id="game-box">
+                <div id="player-zone">
+                    <div class="holder" id="dice-one"><img id="image-one" src="assets/images/dice-4.png"
+                            alt="Player dice one.">
+                    </div>
+                    <div class="holder" id="dice-two"><img src="assets/images/dice-6.png" alt="Player dice two."></div>
                 </div>
-                <div class="holder" id="dice-two"><img src="assets/images/dice-6.png" alt="Player dice two."></div>
-            </div>
-            <div id="cpu-zone">
-                <div class="holder" id="dice-three"><img src="assets/images/dice-5.png" alt="CPU dice one."></div>
-                <div class="holder" id="dice-four"><img src="assets/images/dice-3.png" alt="Cput dice two."></div>
+                <div id="cpu-zone">
+                    <div class="holder" id="dice-three"><img src="assets/images/dice-5.png" alt="CPU dice one."></div>
+                    <div class="holder" id="dice-four"><img src="assets/images/dice-3.png" alt="Cput dice two."></div>
+                </div>
             </div>
         </div>
-    </div>
 
-    <!-- Control area -->
-    <section id="control-area">
-        <div id="control-box">
-            <div><button class="buttons" id="restart">Restart</button></div>
-            <div id="roll-button"><button class="buttons" id="roll-dice">Roll Dice!</button></div>
-            <div><button class="buttons" id="exit">Exit</button></div>
+        <!-- Control area -->
+        <div id="control-area">
+            <div id="control-box">
+                <div><button class="buttons" id="restart">Restart</button></div>
+                <div id="roll-button"><button class="buttons" id="roll-dice">Roll Dice!</button></div>
+                <div><button class="buttons" id="exit">Exit</button></div>
+            </div>
         </div>
     </section>
-
     <!-- Result area -->
     <section id="results-area">
         <div id="results-message">
