@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 // Wait for the DOM to finish loading before running the game
 // Get the button elements and add event listeners to them
 // Source - javascript walktrough project - Code Institute
@@ -7,21 +9,27 @@ document.addEventListener("DOMContentLoaded", function () {
         button.addEventListener("click", function () {
             if (this.getAttribute("id") === "roll-dice") {
                 rollTheDice();
+                return;
             } else if (this.getAttribute("id") === "restart") {
                 resetTheScore();
+                return;
             } else if (this.getAttribute("id") === "exit") {
                 // https://www.w3schools.com/jsref/met_loc_assign.asp
                 localStorage.clear();
                 window.location.replace("./index.html");
                 //https://www.w3schools.com/jsref/met_loc_replace.asp
+                return;
             } else if (this.getAttribute("id") === "button-one") {
                 returnToTheGame();
                 resetTheScore();
+                return;
             } else if (this.getAttribute("id") === "button-two") {
                 returnToTheGame();
                 resetTheScore();
+                return;
             } else if (this.getAttribute("id") === "play") {
                 checkPlayerName();
+                return;
             }
         });
     }
@@ -30,6 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("roll-dice").addEventListener("keydown", function (event) {
         if (event.key === "Enter") {
             rollTheDice();
+            return;
         }
     });
 });
@@ -89,14 +98,17 @@ function displayTheRollResult(sumPlayer, sumCpu) {
  */
 function displayTheWinner(sumPlayer, sumCpu) {
     if (sumPlayer === sumCpu) {
-        return document.getElementById("message").innerHTML = "DRAW!";
+        document.getElementById("message").innerHTML = "DRAW!";
+        return;
     } else if (sumPlayer > sumCpu) {
         let pName = localStorage.getItem('pname');
         document.getElementById("message").innerHTML = `${pName} WINS!`;
-        return incrementPlayerScore();
+        incrementPlayerScore();
+        return;
     } else {
         document.getElementById("message").innerHTML = "CPU WINS!";
-        return incrementCpuScore();
+        incrementCpuScore();
+        return;
     }
 }
 
@@ -162,8 +174,10 @@ function checkPlayerName() {
     if (playerName) {
         localStorage.setItem("pname", playerName);
         window.location.replace("./game.html");
+        return;
     } else {
         alert("Choose Your Name!");
+        return;
     }
 }
 
