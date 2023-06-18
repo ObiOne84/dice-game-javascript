@@ -28,3 +28,12 @@ Click [HERE](https://obione84.github.io/dice-game-javascript/) to visit a live p
 - The user cannot access the game without providing the name.
   
  ![Screenshot of about game section.](assets/screenshots/screenshot-about-game.png)
+
+### *3. The Footer* ###
+
+- The footer section includes links to social media sites for game developer. The links will open in a new tab, encouraging the user to connect with the game developer via social media and checking for updates to the game or new releases.
+
+ ![Screenshot of the footer.](assets/screenshots/screenshot-footer.png)
+
+### *4. The Game Page* ###
+
