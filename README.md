@@ -37,3 +37,10 @@ Click [HERE](https://obione84.github.io/dice-game-javascript/) to visit a live p
 
 ### *4. The Game Page* ###
 
+- This page will allow users to play the game.
+- Once the user clicks on the roll dice button, the dice will roll, and the display area becomes active; display the dice roll results, the battle winner's name, and add the score. 
+- Also, the user can restart the game by clearing all results and starting the game from the beginning without the need to leave the game.
+- Alternatively, the user can leave the game by clicking the exit button, which will load the main game page, allowing a user to change the name. The click on the exit button will clear all results from local storage.
+
+![The screenshot of game area.](assets/screenshots/screenshot-game-area-active.png)
+
