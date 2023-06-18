@@ -19,3 +19,12 @@ Click [HERE](https://obione84.github.io/dice-game-javascript/) to visit a live p
 - This section contains a video of rolling dice, allowing users to understand the website's purpose and target audience clearly. The focus is on people looking for online entertainment and wishing to join a challenging game of rolling dice.
 
   ![Landing page video.](assets/screenshots/screenshot-main-image.png)
+
+### *2. The About Game Section* ###
+
+- The about us section contains game rules and a user name login area.
+- This section outlines general rules, explaining the score calculation and winning requirements. 
+- The about game section includes the player name login area, where a user must provide the name to start the game. 
+- The user cannot access the game without providing the name.
+  
+ ![Screenshot of about game section.](assets/screenshots/screenshot-about-game.png)
