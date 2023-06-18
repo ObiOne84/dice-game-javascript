@@ -1,6 +1,6 @@
-![Roll dices game logo.](assets/screenshots/screenshot-logo.png)
+# Roll Dice Game #
 
-# Roll Dices Game #
+![Roll dices game logo.](assets/screenshots/screenshot-logo.png)
 
 The Roll Dice Game is a landing page for people looking for online entertainment. The website provides a dice game for the user based on luck and chance. The main page includes information about the game rules, user name login and social media links. After giving the user name on the landing page, the player will be directed to the game area where it will contest the computer against a challenging battle of roll dice game. To win the game, the user must win eleven matches corresponding to eleven winning dice rolls. The user will roll two dice simultaneously. The higher number wins. When the user rolls double, the sum will multiply by two.
 
@@ -23,8 +23,8 @@ Click [HERE](https://obione84.github.io/dice-game-javascript/) to visit a live p
 ### *2. The About Game Section* ###
 
 - The about us section contains game rules and a user name login area.
-- This section outlines general rules, explaining the score calculation and winning requirements. 
-- The about game section includes the player name login area, where a user must provide the name to start the game. 
+- This section outlines general rules, explaining the score calculation and winning requirements.
+- The about game section includes the player name login area, where a user must provide the name to start the game.
 - The user cannot access the game without providing the name.
   
  ![Screenshot of about game section.](assets/screenshots/screenshot-about-game.png)
@@ -38,7 +38,7 @@ Click [HERE](https://obione84.github.io/dice-game-javascript/) to visit a live p
 ### *4. The Game Page* ###
 
 - This page will allow users to play the game.
-- Once the user clicks on the roll dice button, the dice will roll, and the display area becomes active; display the dice roll results, the battle winner's name, and add the score. 
+- Once the user clicks on the roll dice button, the dice will roll, and the display area becomes active; display the dice roll results, the battle winner's name, and add the score.
 - Also, the user can restart the game by clearing all results and starting the game from the beginning without the need to leave the game.
 - Alternatively, the user can leave the game by clicking the exit button, which will load the main game page, allowing a user to change the name. The click on the exit button will clear all results from local storage.
 
@@ -60,3 +60,16 @@ Click [HERE](https://obione84.github.io/dice-game-javascript/) to visit a live p
 
 - The future update will include leaderboard records stored in local storage, allowing users to track their progress.
 
+## UI/UX ##
+
+### *1. Color Pallete* ###
+
+- The background color for the website is set to be `#008b8b` with font color set to `#ffffff` and `#ffffff` with font color set to `#003f3f`, which provides contrast and makes text easily readable for the user.
+- The color of the buttons is set to `#ffffff` with black font and changed on hover to `#8b0000` with the combination of `#ffffff` color set for a font to highlight clickable elements and user's action.
+- The font color for winner/looser is set to `#fed953` to differentiate the end game message from the game and put emphasis on the importance of the message.
+
+### *2. Fonts* ###
+
+- All fonts used for the website are sans-serif type to provide clean and minimal design.
+- The font use for h1 is "Montserrat", h2 "Martel", p "Proza Libre" which provide clean and easily readable desing.
+- Fonts are available from Google Fonts at <http://fonts.google.com/>
