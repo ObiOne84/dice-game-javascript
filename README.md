@@ -42,5 +42,21 @@ Click [HERE](https://obione84.github.io/dice-game-javascript/) to visit a live p
 - Also, the user can restart the game by clearing all results and starting the game from the beginning without the need to leave the game.
 - Alternatively, the user can leave the game by clicking the exit button, which will load the main game page, allowing a user to change the name. The click on the exit button will clear all results from local storage.
 
-![The screenshot of game area.](assets/screenshots/screenshot-game-area-active.png)
+ ![The screenshot of game area.](assets/screenshots/screenshot-game-area-active.png)
+
+### *5. Winner and Looser Message* ###
+
+- When the user or computer reaches eleven points, the end game message will appear to the user to congratulate the user for winning the game or to wish them luck in the next round.
+
+ ![Screenshots of winner and user end game message.](assets/screenshots/screenshot-end-message.png)
+
+### Future Features ###
+
+### *1. Player Battle Mode* ###
+
+- The future update should include the player battle mode, allowing two to eight users to play and battle each other. The battle mode should enable players to progress through levels by adding additional dice. The game would start with two dice rolls and end with four dice. An additional scoring system would be added to track individual players' scores.
+
+### *2. Leaderboard score table* ###
+
+- The future update will include leaderboard records stored in local storage, allowing users to track their progress.
 
