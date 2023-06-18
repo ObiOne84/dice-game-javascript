@@ -7,3 +7,15 @@ The Roll Dice Game is a landing page for people looking for online entertainment
 Click [HERE](https://obione84.github.io/dice-game-javascript/) to visit a live page or follow the link below:  
 <https://obione84.github.io/dice-game-javascript/>
 
+---
+![Screenshot of a page responsivness test.](assets/screenshots/screenshot-responsive.png)
+
+## Features ##
+
+### Current Features ###
+
+### *1. The Landing Page Image* ###
+
+- This section contains a video of rolling dice, allowing users to understand the website's purpose and target audience clearly. The focus is on people looking for online entertainment and wishing to join a challenging game of rolling dice.
+
+  ![Landing page video.](assets/screenshots/screenshot-main-image.png)
