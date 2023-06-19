@@ -128,3 +128,24 @@ Click [HERE](https://obione84.github.io/dice-game-javascript/) to visit a live p
   - Once the main branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 
  The live link can be found here: <https://obione84.github.io/dice-game-javascript/index.html>
+
+## Local Development ##
+
+- To bring down project for local development, it is possible to clone a repository by following steps below:
+  - On <https://github.com>, navigate to the main page of the repository.
+  - Above the list of files, click the green button ***Code***.
+  - Select Local tab.
+  - Copy to HTTPS code.
+  - In your local IDE open terminal, choose the location where you want to clone the directory.
+
+  - Type ``git clone`` and then paste the URL you copied from GitHub.
+  - Press **Enter** to create the clone.
+
+- Alternatively, you can fork a GitHub repository. Remember that if you forked the repository, none of the updates made to the source repo would be reflected in your forked repo. To fork the repository, follow the steps below:
+  - Log in to your GitHub account.
+  - Go to the repository you want to fork.
+  - In the top right corner of the window, click on the Fork button.
+  - The process will start, and you will see the message confirming the start.
+
+## Credits ##
+
