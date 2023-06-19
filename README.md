@@ -111,3 +111,20 @@ Click [HERE](https://obione84.github.io/dice-game-javascript/) to visit a live p
 | New Game Button | Restart the game after winning or loosing message | Pass |
 | Social Media Links | Load desired page in separate tab | Pass |
 
+## Bugs ##
+
+### *1. Unfixed Bugs* ###
+
+- None.
+
+## Deployment ##
+
+- The site was deployed to GitHub pages. The steps to deploy are as follows:
+  - In the GitHub repository, navigate to the Settings tab
+  - In the Settings menu, go to Pages
+  - From the source drop-down menu, select Deploy from a branch
+  - From the Branch drop-down menu, select Main Branch, and Root
+  - Click Save
+  - Once the main branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+
+ The live link can be found here: <https://obione84.github.io/dice-game-javascript/index.html>
