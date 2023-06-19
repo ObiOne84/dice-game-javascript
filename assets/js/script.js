@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 resetTheScore();
                 return;
             } else if (this.getAttribute("id") === "exit") {
-                // https://www.w3schools.com/jsref/met_loc_assign.asp
+                // 
                 localStorage.clear();
                 window.location.replace("./index.html");
                 //https://www.w3schools.com/jsref/met_loc_replace.asp

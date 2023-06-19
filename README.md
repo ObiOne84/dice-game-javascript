@@ -149,3 +149,19 @@ Click [HERE](https://obione84.github.io/dice-game-javascript/) to visit a live p
 
 ## Credits ##
 
+### *1. Content* ###
+
+- The code for the social media links was taken from the Code Institute tutorial 'Love Running' available [Here](https://github.com/Code-Institute-Solutions/love-running-2.0-sourcecode/commit/a8b69289396e71897617b40be0d892649bac34ed)
+- The code for event listener was developed following Code Institute javascipts example "Love Maths" project. The source code is available [Here](https://github.com/Code-Institute-Solutions/love-maths-2.0-sourcecode/blob/master/02-adding-some-javascript/03-generating-random-numbers/assets/js/script.js)
+- The code for to add and clear data from local storage was developed following developer.mozilla tutorial available [Here](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
+- The code to open a new page with javascript was developed following W3Schools tutorial available [Here](https://www.w3schools.com/jsref/met_loc_replace.asp)
+- The instructions on how to clone the Git Hub repository were taken from [GitHub Docs](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
+- The instructions on how to fork a GitHub repository were taken from [How-To-Geek](https://www.howtogeek.com/759384/how-to-fork-a-github-repository/)
+
+### *2. Media* ###
+
+- The favicons were developed and downloaded from [Flaticon](https://www.flaticon.com/)
+- The video used for hero image was sourced from [Pixabay](https://pixabay.com/videos/dice-gamble-game-cube-luck-poker-55850/)
+- The dice images were sourced from [Pixabay](https://pixabay.com/users/clker-free-vector-images-3736/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=312627) created by user ID=312627
+- The winner trophy icon was source from [Flaticon](https://www.flaticon.com/free-icons/winner) created by Freepik
+- The looser medal icon was source from [Flaticon](https://www.flaticon.com/free-icons/medal) created by Freepik
