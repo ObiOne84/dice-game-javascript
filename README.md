@@ -91,3 +91,23 @@ Click [HERE](https://obione84.github.io/dice-game-javascript/) to visit a live p
 - The website was tested and worked correctly with Chrome, Edge, Firefox, Opera and Safari browsers.
 - The website and the game was tested on various screen sizes with developer tools, and content and function display correctly on all standard screen sizes.
 
+ ![Lighthouse accessibility test results.](assets/screenshots/screenshot-lighthouses-results.png)
+
+### *3. Features Testing* ####
+
+- Testing involved manual functionality checks of the website features listed in the table below. In addition, all clickable elements were checked by clicking and recording results. Pass result was granted for all features that match the expected outcome. The test was conducted on various screen sizes through developer tools.
+
+| Feature | Expected Action| Test Result|
+|---------|----------------|------------|
+| Play Button | Game will not load without providing user name;  | Pass |
+| Play Button | 'Choose your name' message to appear for users who attempt to start game without passing the name | Pass |
+| Play Button | Open the game and sets user name on the game board | Pass |
+| Roll Dice Button | Rolls the dice, displays the roll results and the match winner | Pass |
+| Roll Dice Button | Increase the winner score by 1 point | Pass |
+| Roll Dice Button | Display game winner message after player reaches 11 points | Pass |
+| Roll Dice Button | Display game better luck message after computers reaches 11 points | Pass |
+| Restart Button | Clear the score board and all messages | Pass |
+| Exit Button | Return to main page, clear local storage | Pass |
+| New Game Button | Restart the game after winning or loosing message | Pass |
+| Social Media Links | Load desired page in separate tab | Pass |
+
