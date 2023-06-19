@@ -84,3 +84,10 @@ Click [HERE](https://obione84.github.io/dice-game-javascript/) to visit a live p
 |game | html | pass, no errors or warnings to show | [W3C Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fobione84.github.io%2Fdice-game-javascript%2Fgame.html) |
 | script | js | pass, no errors and one warning| [JSHint](https://jshint.com/) |
 | style | css | pass, no errors found | [W3C CSS Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fobione84.github.io%2Fdice-game-javascript%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) |
+
+### *2. Accessibility Testing* ###
+
+- The website passed the accessibility test throught the lighthouse function in Chrome Developer Tools. 
+- The website was tested and worked correctly with Chrome, Edge, Firefox, Opera and Safari browsers.
+- The website and the game was tested on various screen sizes with developer tools, and content and function display correctly on all standard screen sizes.
+
