@@ -142,6 +142,35 @@ footer {
     color: #8b0000;
 }
 
+/* Style pop-up message */
+#gray-box {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(1, 1, 1, 0.8);
+    /* display: none; */
+}
+
+#pop-up {
+    position: fixed;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: #003f3f;
+    height: 270px;
+    width: 450px;
+    border: 2px solid #edffff;
+    margin: 0;
+    /* display: none; */
+}
+
+.choose-name {
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 15%;
+    letter-spacing: 1px;
+}
+
 /* Style game area */
 #game-area {
     height: 22vw;
