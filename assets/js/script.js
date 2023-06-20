@@ -53,26 +53,26 @@ document.addEventListener("DOMContentLoaded", function () {
 function rollTheDice() {
 
     let randomNumber = [];
-    for (let i = 0; i < 5; i++) {
+    for (let i = 1; i < 6; i++) {
         randomNumber.push(Math.floor(Math.random() * 6) + 1);
     }
 
-    let sumPlayer = randomNumber[0] + randomNumber[1];
-    let sumCpu = randomNumber[2] + randomNumber[3];
+    let sumPlayer = randomNumber[1] + randomNumber[2];
+    let sumCpu = randomNumber[3] + randomNumber[4];
 
-    if (randomNumber[0] === randomNumber[1] && randomNumber[2] !== randomNumber[3]) {
+    if (randomNumber[1] === randomNumber[2] && randomNumber[3] !== randomNumber[4]) {
         sumPlayer = sumPlayer * 2;
-        sumCpu = sumCpu;
+        sumCpu;
 
-    } else if (randomNumber[0] !== randomNumber[1] && randomNumber[2] === randomNumber[3]) {
-        sumPlayer = sumPlayer;
+    } else if (randomNumber[1] !== randomNumber[2] && randomNumber[3] === randomNumber[4]) {
+        sumPlayer;
         sumCpu = sumCpu * 2;
-    } else if (randomNumber[0] === randomNumber[1] && randomNumber[2] === randomNumber[3]) {
+    } else if (randomNumber[1] === randomNumber[2] && randomNumber[3] === randomNumber[4]) {
         sumPlayer = sumPlayer * 2;
         sumCpu = sumCpu * 2;
     } else {
-        sumPlayer = sumPlayer;
-        sumCpu = sumCpu;
+        sumPlayer;
+        sumCpu;
     }
 
     replaceImage(randomNumber);
@@ -85,20 +85,25 @@ function rollTheDice() {
  * display the dice represneting the auto-generated random number
  */
 function replaceImage(randomNumber) {
-    let image1 = new Image();
-    let image2 = new Image();
-    let image3 = new Image();
-    let image4 = new Image();
+    // let image1 = new Image();
+    // let image2 = new Image();
+    // let image3 = new Image();
+    // let image4 = new Image();
 
-    image1.src = "./assets/images/dice-" + randomNumber[0] + ".png";
-    image2.src = "./assets/images/dice-" + randomNumber[1] + ".png";
-    image3.src = "./assets/images/dice-" + randomNumber[2] + ".png";
-    image4.src = "./assets/images/dice-" + randomNumber[3] + ".png";
+    // image1.src = "./assets/images/dice-" + randomNumber[0] + ".png";
+    // image2.src = "./assets/images/dice-" + randomNumber[1] + ".png";
+    // image3.src = "./assets/images/dice-" + randomNumber[2] + ".png";
+    // image4.src = "./assets/images/dice-" + randomNumber[3] + ".png";
 
-    document.getElementsByTagName("img")[1].replaceWith(image1);
-    document.getElementsByTagName("img")[2].replaceWith(image2);
-    document.getElementsByTagName("img")[3].replaceWith(image3);
-    document.getElementsByTagName("img")[4].replaceWith(image4);
+    // document.getElementsByTagName("img")[1].replaceWith(image1);
+    // document.getElementsByTagName("img")[2].replaceWith(image2);
+    // document.getElementsByTagName("img")[3].replaceWith(image3);
+    // document.getElementsByTagName("img")[4].replaceWith(image4);
+    for (let i = 1; i < 5; i++) {
+        let image = new Image();
+        image.src = "./assets/images/dice-" + randomNumber[i] + ".png";
+        document.getElementsByTagName("img")[i].replaceWith(image);
+    }
 }
 
 /** 
