@@ -52,28 +52,30 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function rollTheDice() {
 
-    let num1 = Math.floor(Math.random() * 6) + 1;
-    let num2 = Math.floor(Math.random() * 6) + 1;
-    let num3 = Math.floor(Math.random() * 6) + 1;
-    let num4 = Math.floor(Math.random() * 6) + 1;
-    let sumPlayer = [];
-    let sumCpu = [];
-
-    if (num1 === num2 && num3 !== num4) {
-        sumPlayer = (num1 + num2) * 2;
-        sumCpu = num3 + num4;
-    } else if (num1 !== num2 && num3 === num4) {
-        sumPlayer = num1 + num2;
-        sumCpu = (num3 + num4) * 2;
-    } else if (num1 === num2 && num3 === num4) {
-        sumPlayer = (num1 + num2) * 2;
-        sumCpu = (num3 + num4) * 2;
-    } else {
-        sumPlayer = num1 + num2;
-        sumCpu = num3 + num4;
+    let randomNumber = [];
+    for (let i = 0; i < 5; i++) {
+        randomNumber.push(Math.floor(Math.random() * 6) + 1);
     }
 
-    replaceImage(num1, num2, num3, num4);
+    let sumPlayer = randomNumber[0] + randomNumber[1];
+    let sumCpu = randomNumber[2] + randomNumber[3];
+
+    if (randomNumber[0] === randomNumber[1] && randomNumber[2] !== randomNumber[3]) {
+        sumPlayer = sumPlayer * 2;
+        sumCpu = sumCpu;
+
+    } else if (randomNumber[0] !== randomNumber[1] && randomNumber[2] === randomNumber[3]) {
+        sumPlayer = sumPlayer;
+        sumCpu = sumCpu * 2;
+    } else if (randomNumber[0] === randomNumber[1] && randomNumber[2] === randomNumber[3]) {
+        sumPlayer = sumPlayer * 2;
+        sumCpu = sumCpu * 2;
+    } else {
+        sumPlayer = sumPlayer;
+        sumCpu = sumCpu;
+    }
+
+    replaceImage(randomNumber);
     displayTheRollResult(sumPlayer, sumCpu);
     displayTheWinner(sumPlayer, sumCpu);
 }
@@ -82,29 +84,34 @@ function rollTheDice() {
  * The function replace the images of the dices to 
  * display the dice represneting the auto-generated random number
  */
-function replaceImage(num1, num2, num3, num4) {
+function replaceImage(randomNumber) {
     let image1 = new Image();
     let image2 = new Image();
     let image3 = new Image();
     let image4 = new Image();
-    image1.src = "./assets/images/dice-" + num1 + ".png";
-    image2.src = "./assets/images/dice-" + num2 + ".png";
-    image3.src = "./assets/images/dice-" + num3 + ".png";
-    image4.src = "./assets/images/dice-" + num4 + ".png";
+
+    image1.src = "./assets/images/dice-" + randomNumber[0] + ".png";
+    image2.src = "./assets/images/dice-" + randomNumber[1] + ".png";
+    image3.src = "./assets/images/dice-" + randomNumber[2] + ".png";
+    image4.src = "./assets/images/dice-" + randomNumber[3] + ".png";
+
     document.getElementsByTagName("img")[1].replaceWith(image1);
     document.getElementsByTagName("img")[2].replaceWith(image2);
     document.getElementsByTagName("img")[3].replaceWith(image3);
     document.getElementsByTagName("img")[4].replaceWith(image4);
 }
 
-/** Display the dice roll result */
+/** 
+ * Display the dice roll result 
+ */
 function displayTheRollResult(sumPlayer, sumCpu) {
     let pName = localStorage.getItem('pname');
     document.getElementById("player-field").innerText = `${pName} scored ${sumPlayer} points!`;
     document.getElementById("cpu-field").innerText = `CPU scored ${sumCpu} points!`;
 }
 
-/** Display to winner of the roll dice
+/**
+ * Display to winner of the roll dice
  * the function display the name of the winner
  */
 function displayTheWinner(sumPlayer, sumCpu) {
