@@ -148,7 +148,7 @@ footer {
     height: 100vh;
     width: 100vw;
     background-color: rgba(1, 1, 1, 0.8);
-    /* display: none; */
+    display: none;
 }
 
 #pop-up {
@@ -161,7 +161,7 @@ footer {
     width: 450px;
     border: 2px solid #edffff;
     margin: 0;
-    /* display: none; */
+    display: none;
 }
 
 .choose-name {
