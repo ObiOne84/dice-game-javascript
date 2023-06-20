@@ -85,20 +85,7 @@ function rollTheDice() {
  * display the dice represneting the auto-generated random number
  */
 function replaceImage(randomNumber) {
-    // let image1 = new Image();
-    // let image2 = new Image();
-    // let image3 = new Image();
-    // let image4 = new Image();
 
-    // image1.src = "./assets/images/dice-" + randomNumber[0] + ".png";
-    // image2.src = "./assets/images/dice-" + randomNumber[1] + ".png";
-    // image3.src = "./assets/images/dice-" + randomNumber[2] + ".png";
-    // image4.src = "./assets/images/dice-" + randomNumber[3] + ".png";
-
-    // document.getElementsByTagName("img")[1].replaceWith(image1);
-    // document.getElementsByTagName("img")[2].replaceWith(image2);
-    // document.getElementsByTagName("img")[3].replaceWith(image3);
-    // document.getElementsByTagName("img")[4].replaceWith(image4);
     for (let i = 1; i < 5; i++) {
         let image = new Image();
         image.src = "./assets/images/dice-" + randomNumber[i] + ".png";
