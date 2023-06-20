@@ -144,8 +144,8 @@ footer {
 
 /* Style pop-up message */
 #gray-box {
-    position: absolute;
-    height: 100vh;
+    position: fixed;
+    height: 100%;
     width: 100vw;
     background-color: rgba(1, 1, 1, 0.8);
     display: none;
@@ -168,7 +168,7 @@ footer {
     text-transform: uppercase;
     text-align: center;
     padding-top: 15%;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 
 /* Style game area */
@@ -525,6 +525,16 @@ footer {
 
     .social-media i {
         font-size: 120%;
+    }
+
+    #pop-up {
+        height: 140px;
+        width: 280px;
+    }
+
+    .choose-name {
+        padding-top: 5%;
+        font-size: 100%;
     }
 }
 
