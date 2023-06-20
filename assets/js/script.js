@@ -62,17 +62,17 @@ function rollTheDice() {
 
     if (randomNumber[1] === randomNumber[2] && randomNumber[3] !== randomNumber[4]) {
         sumPlayer = sumPlayer * 2;
-        sumCpu;
+        sumCpu = sumCpu;
 
     } else if (randomNumber[1] !== randomNumber[2] && randomNumber[3] === randomNumber[4]) {
-        sumPlayer;
+        sumPlayer = sumPlayer;
         sumCpu = sumCpu * 2;
     } else if (randomNumber[1] === randomNumber[2] && randomNumber[3] === randomNumber[4]) {
         sumPlayer = sumPlayer * 2;
         sumCpu = sumCpu * 2;
     } else {
-        sumPlayer;
-        sumCpu;
+        sumPlayer = sumPlayer;
+        sumCpu = sumCpu;
     }
 
     replaceImage(randomNumber);
