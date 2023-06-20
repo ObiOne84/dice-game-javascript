@@ -45,6 +45,11 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+/**
+ * Main function, that generates random number on the click of roll dice button
+ * pass parameters to other function to display dice, results and winner
+ */
+
 function rollTheDice() {
 
     let num1 = Math.floor(Math.random() * 6) + 1;
@@ -73,6 +78,10 @@ function rollTheDice() {
     displayTheWinner(sumPlayer, sumCpu);
 }
 
+/**
+ * The function replace the images of the dices to 
+ * display the dice represneting the auto-generated random number
+ */
 function replaceImage(num1, num2, num3, num4) {
     let image1 = new Image();
     let image2 = new Image();
