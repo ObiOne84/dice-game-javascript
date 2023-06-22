@@ -50,6 +50,11 @@ Click [HERE](https://obione84.github.io/dice-game-javascript/) to visit a live p
 
  ![Screenshots of winner and user end game message.](assets/screenshots/screenshot-end-message.png)
 
+### *6. Local storage* ###
+
+- The user name is saved in the local storage after clicking the play button. This allows the user to continue the game without passing the name again. Users can save the game URL and access the game directly.
+- The game will not start without the user name provided. When the game is accessed via URL without a login user name, the "Roll Dice" button will not roll the dice but will load the landing page.
+
 ### Future Features ###
 
 ### *1. Player Battle Mode* ###
@@ -87,7 +92,7 @@ Click [HERE](https://obione84.github.io/dice-game-javascript/) to visit a live p
 
 ### *2. Accessibility Testing* ###
 
-- The website passed the accessibility test throught the lighthouse function in Chrome Developer Tools. 
+- The website passed the accessibility test throught the lighthouse function in Chrome Developer Tools.
 - The website was tested and worked correctly with Chrome, Edge, Firefox, Opera and Safari browsers.
 - The website and the game was tested on various screen sizes with developer tools, and content and function display correctly on all standard screen sizes.
 

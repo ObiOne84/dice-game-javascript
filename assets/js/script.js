@@ -47,7 +47,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
-
 /**
  * Main function, that generates random number on the click of roll dice button
  * pass parameters to other function to display dice, results and winner
@@ -100,6 +99,7 @@ function replaceImage(randomNumber) {
  * Display the dice roll result 
  */
 function displayTheRollResult(sumPlayer, sumCpu) {
+
     let pName = localStorage.getItem('pname');
     document.getElementById("player-field").innerText = `${pName} scored ${sumPlayer} points!`;
     document.getElementById("cpu-field").innerText = `CPU scored ${sumCpu} points!`;
@@ -110,6 +110,7 @@ function displayTheRollResult(sumPlayer, sumCpu) {
  * the function display the name of the winner
  */
 function displayTheWinner(sumPlayer, sumCpu) {
+
     if (sumPlayer === sumCpu) {
         document.getElementById("message").innerHTML = "DRAW!";
         return;
@@ -130,6 +131,7 @@ function displayTheWinner(sumPlayer, sumCpu) {
  * and when player score reach 11 point it will display message
  */
 function incrementPlayerScore() {
+
     let playerScore = parseInt(document.getElementById("palyer-score").innerText);
     document.getElementById("palyer-score").innerText = ++playerScore;
     if (playerScore === 11) {
@@ -142,6 +144,7 @@ function incrementPlayerScore() {
  * and when CPU score reach 11 point it will display message
  */
 function incrementCpuScore() {
+
     let cpuScore = parseInt(document.getElementById("cpu-score").innerText);
     document.getElementById("cpu-score").innerText = ++cpuScore;
     if (cpuScore === 11) {
@@ -153,6 +156,7 @@ function incrementCpuScore() {
  * Function display the message for the player who won the game but unhiding the div
  */
 function displayWinnerMessage() {
+
     let winnerMessage = document.getElementById("winner");
     winnerMessage.style.display = "block";
 }
@@ -161,6 +165,7 @@ function displayWinnerMessage() {
  * Function display the message for the player who lost the game but unhiding the div
  */
 function displayLooserMessage() {
+
     let looserMessage = document.getElementById("looser");
     looserMessage.style.display = "block";
 }
@@ -169,6 +174,7 @@ function displayLooserMessage() {
  * This function will reset the score, and clear all messages
  */
 function resetTheScore() {
+
     let cpuScore = document.getElementById("cpu-score");
     let playerScore = document.getElementById("palyer-score");
     cpuScore.innerHTML = "0";
@@ -183,8 +189,8 @@ function resetTheScore() {
  * add player name to local storage
  */
 function checkPlayerName() {
-    let playerName = document.getElementById("pname").value;
 
+    let playerName = document.getElementById("pname").value;
     if (playerName) {
         localStorage.setItem("pname", playerName);
         window.location.replace("./game.html");
@@ -198,6 +204,7 @@ function checkPlayerName() {
  * Function will unhide the message for the winner and allow to return to the game
  */
 function returnToTheGame() {
+
     let winnerMessage = document.getElementById("winner");
     winnerMessage.style.display = "none";
     let looserMessage = document.getElementById("looser");
@@ -208,6 +215,7 @@ function returnToTheGame() {
  * Function hide pop-up message
 */
 function hidePopUpMessage() {
+
     let hideMessage = document.getElementById("gray-box");
     let popUpWindow = document.getElementById("pop-up");
     hideMessage.style.display = "none";
@@ -218,6 +226,7 @@ function hidePopUpMessage() {
  * Function to dispaly pop-up message
  */
 function displayPopUpMessage() {
+
     let hideMessage = document.getElementById("gray-box");
     let popUpWindow = document.getElementById("pop-up");
     hideMessage.style.display = "block";
@@ -230,6 +239,7 @@ function displayPopUpMessage() {
  * and direct user to landing page
  */
 function ensurePlayerName() {
+
     let pName = localStorage.getItem('pname');
     if (pName === null) {
         window.location.replace("./index.html");
