@@ -8,22 +8,17 @@ document.addEventListener("DOMContentLoaded", function () {
     for (let button of buttons) {
         button.addEventListener("click", function () {
             if (this.getAttribute("id") === "roll-dice") {
-                rollTheDice();
+                ensurePlayerName();
                 return;
             } else if (this.getAttribute("id") === "restart") {
                 resetTheScore();
                 return;
             } else if (this.getAttribute("id") === "exit") {
-                // 
                 localStorage.clear();
                 window.location.replace("./index.html");
                 //https://www.w3schools.com/jsref/met_loc_replace.asp
                 return;
-            } else if (this.getAttribute("id") === "button-one") {
-                returnToTheGame();
-                resetTheScore();
-                return;
-            } else if (this.getAttribute("id") === "button-two") {
+            } else if (this.getAttribute("id") === "button-one" || this.getAttribute("id") === "button-two") {
                 returnToTheGame();
                 resetTheScore();
                 return;
@@ -178,9 +173,9 @@ function resetTheScore() {
     let playerScore = document.getElementById("palyer-score");
     cpuScore.innerHTML = "0";
     playerScore.innerHTML = "0";
-    document.getElementById("player-field").innerText = "";
-    document.getElementById("cpu-field").innerText = "";
-    document.getElementById("message").innerHTML = "";
+    document.getElementById("player-field").innerText = "-";
+    document.getElementById("cpu-field").innerText = "-";
+    document.getElementById("message").innerHTML = "-";
 }
 
 /**
@@ -226,4 +221,18 @@ function displayPopUpMessage() {
     let popUpWindow = document.getElementById("pop-up");
     hideMessage.style.display = "block";
     popUpWindow.style.display = "block";
+}
+
+/**
+ * The function check for the player name in the local storage,
+ * if none found, it prevent user from rolling dice
+ * and direct user to landing page
+ */
+function ensurePlayerName() {
+    let pName = localStorage.getItem('pname');
+    if (pName === null) {
+        window.location.replace("./index.html");
+    } else {
+        rollTheDice();
+    }
 }
