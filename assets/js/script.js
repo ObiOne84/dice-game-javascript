@@ -30,20 +30,28 @@ document.addEventListener("DOMContentLoaded", function () {
             } else if (this.getAttribute("id") === "play") {
                 checkPlayerName();
                 return;
-            } else if (this.getAttribute("id") === "ok") {
+            } else {
                 hidePopUpMessage();
             }
         });
     }
     let pName = localStorage.getItem('pname');
-    document.getElementById("left").innerHTML = pName;
-    document.getElementById("roll-dice").addEventListener("keydown", function (event) {
-        if (event.key === "Enter") {
-            rollTheDice();
-            return;
-        }
-    });
+    if (pName) {
+        document.getElementById("left").innerHTML = pName;
+    } else {
+        return false;
+    }
+
+    for (let button of buttons) {
+        button.addEventListener("keydown", function (event) {
+            if (event.key === "Enter" && this.getAttribute("id") === "roll-dice") {
+                rollTheDice();
+                return;
+            }
+        });
+    }
 });
+
 
 /**
  * Main function, that generates random number on the click of roll dice button
@@ -186,8 +194,7 @@ function checkPlayerName() {
         window.location.replace("./game.html");
         return;
     } else {
-        displayPopUpMessage();
-        return;
+        return displayPopUpMessage();
     }
 }
 
