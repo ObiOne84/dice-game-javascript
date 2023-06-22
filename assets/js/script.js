@@ -184,6 +184,7 @@ function resetTheScore() {
  */
 function checkPlayerName() {
     let playerName = document.getElementById("pname").value;
+
     if (playerName) {
         localStorage.setItem("pname", playerName);
         window.location.replace("./game.html");
@@ -236,3 +237,4 @@ function ensurePlayerName() {
         rollTheDice();
     }
 }
+
