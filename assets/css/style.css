@@ -24,10 +24,13 @@ p {
 
 /* Style logo */
 #logo {
-    /* height: 7%; */
     text-align: center;
     font-size: 170%;
     margin: 1.5% auto;
+}
+
+#logo>h1 {
+    margin: 0 5% 0 5%;
 }
 
 #logo img {
@@ -427,7 +430,6 @@ footer {
     .message-to-player {
         font-size: 200%;
     }
-
 }
 
 /* for screen size 750px and below */
@@ -435,11 +437,12 @@ footer {
 
     /* style main page */
     #logo {
-        font-size: 150%;
+        font-size: 140%;
     }
 
     #logo img {
         height: 52px;
+        width: 52px;
     }
 
     #game-info {
@@ -548,6 +551,7 @@ footer {
 
     #logo img {
         height: 40px;
+        width: 40px;
     }
 
     /*Add stlye to game area */
