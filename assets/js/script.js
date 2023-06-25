@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     for (let button of buttons) {
-        button.addEventListener("keydown", function (event) {
+        button.addEventListener("click", function (event) {
             if (event.key === "Enter" && this.getAttribute("id") === "roll-dice") {
                 rollTheDice();
                 return;
