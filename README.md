@@ -118,7 +118,32 @@ Click [HERE](https://obione84.github.io/dice-game-javascript/) to visit a live p
 
 ## Bugs ##
 
-### *1. Unfixed Bugs* ###
+### *1. Fixed Bugs* ###
+
+- The dice roll by two rounds. On the press of the enter, the winner score change by two, instead by 1. This was resolved by changing event from "keydown" to "click". Now, after click on dice roll button, user can continue to play the game by pressing "Enter" key to roll the dice.
+
+ ```js
+ before:
+   for (let button of buttons) {
+        button.addEventListener("keydown", function (event) {
+            if (event.key === "Enter" && this.getAttribute("id") === "roll-dice") {
+                rollTheDice();
+                return;
+            }
+        });
+    }
+ after:
+   for (let button of buttons) {
+        button.addEventListener("click", function (event) {
+            if (event.key === "Enter" && this.getAttribute("id") === "roll-dice") {
+                rollTheDice();
+                return;
+            }
+        });
+    }
+ ```
+
+### *2. Unfixed Bugs* ###
 
 - None.
 
