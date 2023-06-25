@@ -1,9 +1,23 @@
 /*jshint esversion: 6 */
 
 // Wait for the DOM to finish loading before running the game
+// Get the input element and add event listeners to them
 // Get the button elements and add event listeners to them
 // Source - javascript walktrough project - Code Institute
 document.addEventListener("DOMContentLoaded", function () {
+
+    let inputs = document.getElementsByTagName("input");
+    for (let input of inputs) {
+        input.addEventListener("keydown", function (event) {
+            if (event.key === "Enter") {
+                checkPlayerName();
+            } else {
+                return false;
+            }
+        });
+    }
+
+    // Buttons controls
     let buttons = document.getElementsByTagName("button");
     for (let button of buttons) {
         button.addEventListener("click", function () {
@@ -30,6 +44,8 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     }
+
+    // Display player name on the game board
     let pName = localStorage.getItem('pname');
     if (pName) {
         document.getElementById("left").innerHTML = pName;
@@ -37,6 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
         return false;
     }
 
+    // Allow user to use enter to roll dice after first click
     for (let button of buttons) {
         button.addEventListener("click", function (event) {
             if (event.key === "Enter" && this.getAttribute("id") === "roll-dice") {
@@ -46,6 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+
 
 /**
  * Main function, that generates random number on the click of roll dice button
