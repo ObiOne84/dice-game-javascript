@@ -105,13 +105,13 @@ p {
 #pname {
     width: 60%;
     text-align: center;
-    border: 2px solid black;
+    border: 2px solid #000000;
     font-size: 120%;
 }
 
 #pname:hover {
     border: 2px dashed #8b0000;
-    background-color: #edffff;
+    background-color: #ffffff;
 }
 
 #enjoy {
@@ -162,7 +162,7 @@ footer {
     background-color: #003f3f;
     height: 270px;
     width: 450px;
-    border: 2px solid #edffff;
+    border: 2px solid #ffffff;
     margin: 0;
     display: none;
 }
@@ -191,7 +191,7 @@ footer {
     width: 50%;
     display: inline-block;
     text-align: center;
-    color: white;
+    color: #ffffff;
     text-transform: uppercase;
     letter-spacing: 1px;
     height: 10%;
@@ -254,7 +254,7 @@ footer {
     border-radius: 15px;
     text-align: center;
     font-weight: bold;
-    border: 1px solid black;
+    border: 1px solid #000000;
     padding: 3px;
 }
 
@@ -265,8 +265,8 @@ footer {
 }
 
 .buttons:hover {
-    color: white;
-    border: 1px solid white;
+    color: #ffffff;
+    border: 1px solid #ffffff;
     background-color: #8b0000;
 }
 
