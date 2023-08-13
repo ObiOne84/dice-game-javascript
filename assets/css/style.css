@@ -299,12 +299,12 @@ footer {
 }
 
 .score-boxes {
-    width: 40%;
+    width: 25%;
     text-align: center;
 }
 
 #message-box {
-    width: 20%;
+    width: 50%;
     text-align: center;
     font-size: 200%;
     color: #003f3f;
@@ -422,7 +422,6 @@ footer {
     }
 
     #message-box {
-        width: 30%;
         font-size: 150%;
         padding: 15px;
     }
@@ -484,7 +483,6 @@ footer {
     }
 
     .score-boxes {
-        width: 35%;
         text-align: center;
         font-size: 80%;
     }
@@ -538,6 +536,10 @@ footer {
     .choose-name {
         padding-top: 5%;
         font-size: 100%;
+    }
+
+    #message-box {
+        font-size: 120%;
     }
 }
 
